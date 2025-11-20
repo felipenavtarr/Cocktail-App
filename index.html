@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail App</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>🍸 Buscador de Cócteles</h1>
+
+    <form action="" id="buscador">
+        <div>
+            <label for="filtro">¿Qué te apetece hoy?</label>
+            <input type="text" id="filtro" name="filtro" placeholder="Ej: Margarita" autocomplete="off" />
+        </div>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="contenedorCocktails">
+        <ul id="listadoCocktails">
+            <!-- Aquí se pintan los cócteles -->
+        </ul>
+    </div>
+    
+    <!-- Modal para las instrucciones -->
+    <div id="modalInstrucciones" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Instrucciones</h2>
+            <p id="textoInstrucciones"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
